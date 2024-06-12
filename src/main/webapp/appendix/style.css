@@ -1,0 +1,153 @@
+﻿/*ユニバーサルセレクタ（初期化）*/
+* {
+    background-color:transparent; /*3.4.2*/
+    margin:0px; /*3.6.1*/
+    padding:0px; /*3.6.2*/
+}
+
+/*エレメントセレクタ（基本レイアウト）*/
+/*h1要素 見出し1*/
+h1 {
+    color:#999999; /*3.4.2*/
+    font-size:1.25em; /*3.5.3*/
+    padding:5px; /*3.6.2*/
+}
+/*h2要素 見出し2*/
+h2 {
+    color:#ffffff; /*3.5.1*/
+    background-color: #6699ff; /*3.5.2*/
+    font-size:1.25em; /*3.5.3*/
+    margin:5px; /*3.6.1*/
+    padding:5px; /*3.6.2*/
+    border-left: 15px solid #3366ff; /*3.6.3*/
+    height:25px; /*3.6.4*/
+    /*CSS3*/
+    border-radius:10px 10px; /*付録1.5*/
+    box-shadow:4px 4px #999999; /*付録1.5*/
+}
+/*h3要素 見出し3*/
+h3 {
+    font-size:1em; /*3.5.3*/
+    margin:5px; /*3.6.1*/
+    padding:2px; /*3.6.2*/
+    border-left:10px solid #66cc99; /*3.6.3*/
+    border-bottom:1px solid #66cc99; /*3.6.3*/
+}
+/*p要素 段落*/
+p {
+    line-height:125%; /*3.5.3*/
+    margin:15px; /*3.6.1*/
+    padding-left:10px; /*3.6.2*/
+}
+/*ul,ol要素 リスト*/
+ul, ol {
+    margin:15px; /*3.6.1(設定済み)*/
+    padding-left:20px; /*3.6.2*/
+}
+/*ul要素 番号なしリスト*/
+ul {
+    list-style-type:square; /*付録1.1*/
+}
+/*li要素 リスト項目*/
+li {
+    margin:10px; /*3.6.1(設定済み)*/
+}
+
+/*table要素 表*/
+table {
+    margin:15px; /*付録1.2(設定済み)*/
+    border-spacing:0px; /*付録1.2*/
+}
+/*th要素 見出しセル*/
+th {
+    padding:5px; /*付録1.2*/
+    background-color:#CCCCff; /*付録1.2*/
+}
+/*td要素 データセル*/
+td{
+    padding:5px; /*付録1.2*/
+}
+/*img要素 画像*/
+img{
+	border:none;
+}
+/*クラスセレクタ（赤文字）*/
+.red {
+    color:red; /*3.4.3*/
+}
+/*クラスセレクタ（回り込み）*/
+.left {
+    margin-left:50px; /*3.6.5*/
+    margin-right:25px; /*3.6.5*/
+    float:left; /*3.6.5*/
+}
+/*クラスセレクタ（回り込み解除）*/
+.clear {
+    clear:both; /*3.6.5*/
+}
+
+/*IDセレクタ（ページ全体）*/
+#content {
+    font-family:Verdana, sans-serif; /*3.5.2*/
+    margin-right:auto; /*付録1.3*/
+    margin-left:auto; /*付録1.3*/
+    width:900px; /*3.4.4*/
+}
+/*IDセレクタ（ヘッダー）*/
+#header {
+    width:900px;
+}
+/*IDセレクタ（メインコンテンツ）*/
+#main {
+    margin-bottom:10px; /*3.6.1*/
+    margin-top:10px; /*3.6.1*/
+    border:1px solid #3366cc; /*3.6.3*/
+    width:898px; /*3.6.4*/
+}
+
+/*擬似クラス（リンク：マウスオーバー）*/
+a:hover {
+    color:#666666; /*3.4.5*/
+}
+
+/*リンクメニュー*/
+#main_menu {
+    padding-top:10px;
+    width:900px;
+    height:27px;
+    background-color:#6699ff;
+}
+/*リンクメニュー内のul要素*/
+#main_menu ul {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+/*リンクメニュー内のli要素*/
+#main_menu li {
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+/*リンクメニュー内のa要素*/
+#main_menu a {
+    color: #ffffff;
+    background-color:#6699ff;
+    text-decoration:none;
+    text-align:center;
+    margin-left:5px;
+    padding:1px;
+    width:110px;
+    height:25px;
+    display:block;
+}
+/*リンクメニュー内のa要素（マウスオーバー）*/
+#main_menu a:hover {
+    color:#666666;
+    background-color:#ffffff;
+}
+/*リンクメニュー内のクラスセレクタ（表示中のページ）*/
+#main_menu a.select{
+    color:#666666;
+    background-color:#ffffff;
+}

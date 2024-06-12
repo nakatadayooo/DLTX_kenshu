@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アンケート  - FLM Clothing</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div id="content">
+  <!--文書のヘッダーここから-->
+  <header id="header">
+   <h1>
+    FLM Clothing ‐カジュアルに、わたしを表現するモダンファッション‐
+   </h1>
+   <nav id="main_menu">
+    <ul>
+     <li><a href="index.html">トップ</a></li>
+     <li><a href="information.html">会社概要</a></li>
+     <li><a href="branch.html">ショップ案内</a></li>
+     <li><a href="campaign.html">キャンペーン</a></li>
+     <li><a href="recruit.html">採用情報</a></li>
+     <li><a href="question.html" class="select">アンケート</a></li>
+     <li><a href="link.html">リンク</a></li>
+    </ul>
+   </nav>
+  </header>
+  <!--文書のヘッダーここまで-->
+  <!--メインコンテンツここから-->
+  <section id="main">
+   <h2>アンケート</h2>
+   <p>アンケートにご協力ください。</p>
+   
+   <form method="post" action="question.php">
+    <h3>お名前</h3>
+    <p>
+     <input type="text" name="user" size="20" maxlength="10" required>
+    </p>
+    
+    <h3>地方</h3>
+    <p>
+     <select name="area">
+      <option value="hokkaido">北海道</option>
+      <option value="kanto">関東</option>
+      <option value="kansai">関西</option>
+      <option value="kyusyu">九州</option>
+      <option value="okinawa">沖縄</option>
+     </select>
+    </p>
+    
+    <h3>趣味</h3>
+    <p>
+     <select name="hobby" size="5" multiple>
+      <option value="sport" selected>スポーツ</option>
+      <option value="book">読書</option>
+      <option value="travel">旅行</option>
+      <option value="game">ゲーム</option>
+      <option value="movie">映画鑑賞</option>
+      <option value="other">その他</option>
+     </select>
+    </p>
+    
+    <h3>性別</h3>
+    <p>
+     <input type="radio" name="gender" id="female" value="woman" checked>
+     <label for="female">女性</label>
+     <input type="radio" name="gender" id="male" value="man">
+     <label for="male">男性</label>
+    </p>
+    
+    <h3>興味のあるアイテム（複数選択可）</h3>
+    <p>
+     <input type="checkbox" name="goods" id="goods1" value="cutsewn ">
+     <label for="goods1">カットソー</label>
+     <input type="checkbox" name="goods" id="goods2" value="blouse">
+     <label for="goods2">ブラウス</label>
+     <input type="checkbox" name="goods" id="goods3" value="one-piece">
+     <label for="goods3">ワンピース</label>
+     <input type="checkbox" name="goods" id="goods4" value="jeans">
+     <label for="goods4">ジーンズ</label>
+     <input type="checkbox" name="goods" id="goods5" value="accessory">
+     <label for="goods5">アクセサリー</label>
+    </p>
+    <h3>その他ご感想</h3>
+    <p>
+     <textarea name="message" rows="5" cols="60">感想：</textarea>
+    </p>
+    <p>
+     <input type="submit" value="送信">
+     <input type="reset" value="取消">
+    </p>
+   </form>
+  </section>
+  <!--メインコンテンツここまで-->
+  <!--文書のフッターここから-->
+  <footer id="footer">
+   <img src="images/copyright.png" alt="copyright">
+  </footer>
+  <!--文書のフッターここまで-->
+ </div>
+</body>
+</html>
